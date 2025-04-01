@@ -20,6 +20,7 @@ Ensure you have Python installed, then install the necessary dependencies:
 pip install selenium
 pip install fake-useragent
 pip install requests
+pip install webdriver-manager
 ```
 
 ## Setup Instructions
@@ -40,6 +41,7 @@ pip install requests
    - Update `correct_product_url` with your desired Best Buy product.
    - Update `correct_sku` to match the SKU of the selected product.
    - Update `DISCORD_WEBHOOK_URL` with your Discord webhook for notifications.
+   - Update Chrome profile path. Open Chrome and navigate to chrome://version/ in the address bar to find your profile. 
    - Set your actual CVV number in the script (use cautiously).
 
 ## Running the Script
