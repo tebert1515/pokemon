@@ -44,16 +44,18 @@ driver.get("https://www.bestbuy.com/")
 input("Log in manually if needed, then press Enter to continue...")
 
 # Navigate to the correct product page
-#correct_product_url = "https://www.bestbuy.com/site/pokemon-trading-card-game-scarlet-violet-journey-together-booster-box-36-packs/6614262.p?skuId=6614262"
-#correct_sku = "6614262"
 correct_product_url = "https://www.bestbuy.com/site/pokemon-trading-card-game-scarlet-violet-destined-rivals-booster-box-36-packs/6624826.p?skuId=6624826"
 correct_sku = "6624826"
+#correct_product_url = "https://www.bestbuy.com/site/pokemon-trading-card-game-scarlet-violet-journey-together-booster-box-36-packs/6614262.p?skuId=6614262"
+#correct_sku = "6614262"
 #correct_product_url = "https://www.bestbuy.com/site/pokemon-trading-card-game-scarlet-violet-prismatic-evolutions-super-premium-collection/6621081.p?skuId=6621081"
 #correct_sku = "6621081"
 #correct_product_url = "https://www.bestbuy.com/site/pokemon-trading-card-game-cynthias-garchomp-ex-premium-collection/6625124.p?skuId=6625124"
 #correct_sku = "6625124"
 #correct_product_url = "https://www.bestbuy.com/site/pokemon-trading-card-game-melmetal-ex-or-houndoom-ex-battle-deck/6569164.p?skuId=6569164"
 #correct_sku = "6569164"
+#correct_product_url = "https://www.bestbuy.com/site/pokemon-trading-card-game-battle-academy-2024/6580253.p?skuId=6580253"
+#correct_sku = "6580253"
 driver.get(correct_product_url)
 
 DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1356292796528721990/K5ppOOK8NcUzaWPyXK4oBCOsMDQhfBZBgczFm8BrpAmsIq5QsonAa-UBdvrrmJybx6Ax"
@@ -219,9 +221,9 @@ except Exception as e:
 # Send Discord alert via Server Webhook
 send_discord_alert()
 
-# Pause for 10 minutes to allow manual intervention
-print("Waiting 10 minutes before proceeding to checkout...")
-time.sleep(600)  # 10-minute delay
+# Pause for 15 minutes to allow manual intervention
+print("Waiting 15 minutes before proceeding to checkout...")
+time.sleep(900)  # 15-minute delay
 
 print("Checking for CVV input field...")
 
